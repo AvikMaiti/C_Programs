@@ -1,3 +1,4 @@
+// This is a simple arrar just to take user input and display the array
 #include <stdio.h>
 
 // main function
