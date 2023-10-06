@@ -1,3 +1,13 @@
+// Algorithm
+
+// LinearSearch (array, search_element, array_length,index)
+//     if index < 0
+//         return -1
+//     else if item = key
+//         return index
+//     else
+//     return LinearSearch (array, search_element, array_length,index)
+// ------------------------------------------------------------------------------------------
 // Insertion of an element in an array
 #include <stdio.h>
 
