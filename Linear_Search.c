@@ -1,16 +1,15 @@
 // Algorithm
-
+//
 // LinearSearch (array, search_element, array_length,index)
 //     if index < 0
 //         return -1
-//     else if item = key
+//     else if item = search_element
 //         return index
 //     else
 //     return LinearSearch (array, search_element, array_length,index)
 // ------------------------------------------------------------------------------------------
 // Insertion of an element in an array
 #include <stdio.h>
-
 // user defined function
 int linear(int a[], int srch, int length, int idx)
 {
@@ -26,7 +25,6 @@ int linear(int a[], int srch, int length, int idx)
     else
         return linear(a, srch, length, idx + 1);
 }
-
 // main function
 int main(void)
 {
@@ -47,5 +45,5 @@ int main(void)
     if (rtrn == -1)
         printf("Element not found");
     else
-        printf("The element found in %d index.", rtrn);
+        printf("The element found in %d position.", rtrn);
 }
