@@ -4,12 +4,12 @@
 // if low > high
 //     return -1
 // middle = (low + high) / 2
-// else if array[mid] = search_element
+// if array[middle] = search_element
 //     return middle
-// else if (array[mid] < search_element)
-//     return Binary(array, search_element, low, mid)
-// else if (array[mid] < search_element)
-//     return Binary(array, search_element, mid + 1, high)
+// else if (array[middle] > search_element)
+//     return Binary(array, search_element, low, middle)
+// else if (array[middle] < search_element)
+//     return Binary(array, search_element, middle + 1, high)
 // --------------------------------------------------------------------------------------------------
 // Insertion of an element in an array
 #include <stdio.h>
