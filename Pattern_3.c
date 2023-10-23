@@ -13,12 +13,13 @@ int main(void)
     scanf("%d", &n);
     for (i = 0; i < n; i++)
     {
+        for (j = 0; j < i; j++)
+        {
+            printf("  ");
+        }
         for (j = 0; j < n; j++)
         {
-            if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
-                printf("* ");
-            else
-                printf("  ");
+            printf("* ");
         }
         printf("\n");
     }
