@@ -1,9 +1,9 @@
-/*  hollow square star pattern
- * * * * *
- *       *
- *       *
- *       *
- * * * * *          */
+//   rhombus star pattern
+//
+//  * * * *
+//    * * * *
+//      * * * *
+//        * * * *
 
 #include <stdio.h>
 int main(void)
