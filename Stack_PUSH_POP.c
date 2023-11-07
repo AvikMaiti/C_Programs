@@ -20,13 +20,18 @@ void main()
 
 void menu_list()
 {
-    printf("Please select operation:\n\t1. PUSH\n\t2. POP\n\t3. EXIT\nSelection: ");
+    printf("Please select operation:\n\t1. PUSH\n\t2. POP\n\t3. DISPLAY\n\t4. EXIT\nSelection: ");
     scanf("%d", &menu);
     if (menu == 1)
         PUSH();
     else if (menu == 2)
         POP();
     else if (menu == 3)
+    {
+        Display();
+        menu_list();
+    }
+    else if (menu == 4)
         exit(0);
     else
     {
