@@ -18,7 +18,7 @@ void display_elements_descending(int no, int arr[]);
 // main function
 int main(void)
 {
-    int no, arr[MAX], i, mid;
+    int no, arr[MAX], i;
     printf("Enter no of element:\t");
     scanf("%d", &no);
     printf("Enter elements:\t");
@@ -83,10 +83,9 @@ void merge(int arr[], int low, int mid, int high)
 // for displaying array (Ascending order)
 void display_elements(int no, int arr[])
 {
-    int i;
     printf("Array elements after sorted using Merge Sort:\n");
     printf("Ascending order:\t");
-    for (i = 0; i < no; i++)
+    for (int i = 0; i < no; i++)
     {
         printf("%d ", arr[i]);
     }
@@ -96,9 +95,8 @@ void display_elements(int no, int arr[])
 // for displaying array (Decending order)
 void display_elements_descending(int no, int arr[])
 {
-    int i;
     printf("Descending order:\t");
-    for (i = no - 1; i >= 0; i--)
+    for (int i = no - 1; i >= 0; i--)
     {
         printf("%d ", arr[i]);
     }
